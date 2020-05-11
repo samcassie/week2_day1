@@ -65,8 +65,8 @@ class Test < MiniTest::Test
 
     def test_change_rental_details
         library = Library.new(@library[:title], @library[:rental_details][:student_name], @library[:rental_details][:date])
-        library.change_rental_details("The Simpsons", "Peter", "01/02/03")
-        assert_equal("Peter", @library[1][:rental_details][:name])
+        library.change_rental_details("lord_of_the_rings", "Peter", "01/02/03")
+        assert_equal("Peter", @library[:rental_details][:student_name])
     end
 
 

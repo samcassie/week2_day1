@@ -90,9 +90,9 @@ class Library
     end
 
     def change_rental_details(book_name, student_name, date)
-        if book_name == @title
-            @student_name = student_name
-            @date = date
+        if book_name = @title
+            @student_name.replace(student_name)
+            @date.replace(date)
         end
     end
 
